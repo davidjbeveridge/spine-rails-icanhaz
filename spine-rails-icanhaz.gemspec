@@ -7,14 +7,14 @@ require "spine-rails-icanhaz/version"
 Gem::Specification.new do |s|
   s.name        = "spine-rails-icanhaz"
   s.version     = SpineRailsIcanhaz::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SpineRailsIcanhaz."
-  s.description = "TODO: Description of SpineRailsIcanhaz."
+  s.authors     = ['David Beveridge']
+  s.email       = ['davidjbeveridge@gmail.com']
+  s.homepage    = "http://davidbeveridge.net"
+  s.summary     = "ICanHaz support for spine-rails"
+  s.description = "ICanHaz support for spine-rails"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 3.2.2"
   s.add_dependency "rspec"
