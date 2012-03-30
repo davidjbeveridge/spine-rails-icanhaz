@@ -30,7 +30,6 @@ describe Tilt::IcanhazTemplate do
     
     template = Tilt::IcanhazTemplate.new(path)
     
-    puts template.evaluate
     template.evaluate.should == "(function(){ ich.addTemplate(\"/tmp/icanhaz_template/#{filename}\", \"Hello, World\\n\"); })()"
     
     File.delete path
