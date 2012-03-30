@@ -22,5 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_development_dependency "tilt"
   s.add_development_dependency "sprockets"
+  s.add_development_dependency "spine-rails"
   # s.add_runtime_dependency "rest-client"
 end
