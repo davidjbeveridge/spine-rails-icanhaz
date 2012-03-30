@@ -19,7 +19,7 @@ module Tilt
     end
     
     def evaluate(scope=Object.new, locals={}, &block)
-      Spine::Rails::Icanhaz::JsRenderer.new(file, data).render
+      SpineRailsIcanhaz::JsRenderer.new(file, data).render
     end
     
     

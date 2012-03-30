@@ -9,12 +9,8 @@ require "version"
 require 'js_renderer'
 require 'tilt-icanhaz_template'
 
-module Spine
-  module Rails
-    module Icanhaz
-      
-      Sprockets.register_engine '.ich', Tilt::IcanhazTemplate
-      
-    end
-  end
+module SpineRailsIcanhaz
+
+  Sprockets.register_engine '.ich', Tilt::IcanhazTemplate
+
 end

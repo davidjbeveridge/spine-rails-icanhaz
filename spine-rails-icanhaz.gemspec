@@ -1,27 +1,25 @@
-# -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
+
+# Maintain your gem's version:
 require "spine-rails-icanhaz/version"
 
+# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "spine-rails-icanhaz"
-  s.version     = Spine::Rails::Icanhaz::VERSION
-  s.authors     = ["David Beveridge"]
-  s.email       = ["davidjbeveridge@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{Adds ICanHaz template support to the asset pipeline for use with spine-rails}
-  s.description = %q{Adds ICanHaz template support to the asset pipeline for use with spine-rails}
+  s.version     = SpineRailsIcanhaz::VERSION
+  s.authors     = ["TODO: Your name"]
+  s.email       = ["TODO: Your email"]
+  s.homepage    = "TODO"
+  s.summary     = "TODO: Summary of SpineRailsIcanhaz."
+  s.description = "TODO: Description of SpineRailsIcanhaz."
 
-  s.rubyforge_project = "spine-rails-icanhaz"
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.add_dependency "rails", "~> 3.2.2"
+  s.add_dependency "rspec"
+  s.add_dependency "tilt"
+  s.add_dependency "spine-rails"
 
-  # specify any dependencies here; for example:
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "tilt"
-  s.add_development_dependency "sprockets"
-  s.add_development_dependency "spine-rails"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "sqlite3"
 end

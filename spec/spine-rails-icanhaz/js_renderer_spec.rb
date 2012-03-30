@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Spine::Rails::Icanhaz
+module SpineRailsIcanhaz
 
   describe JsRenderer do
 

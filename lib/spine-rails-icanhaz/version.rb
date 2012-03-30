@@ -1,7 +1,3 @@
-module Spine
-  module Rails
-    module Icanhaz
-      VERSION = "0.0.1"
-    end
-  end
+module SpineRailsIcanhaz
+  VERSION = "0.0.1"
 end
