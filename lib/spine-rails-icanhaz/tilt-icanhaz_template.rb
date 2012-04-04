@@ -22,7 +22,6 @@ module Tilt
       SpineRailsIcanhaz::JsRenderer.new(file, data).render
     end
     
-    
   end
   
   register IcanhazTemplate, 'ich'
